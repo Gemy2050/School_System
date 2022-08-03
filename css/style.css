@@ -121,7 +121,7 @@ body {
   width: 450px;
 }
 .landing .image img {
-  max-width: 600px;
+  max-width: 550px;
 }
 @media(max-width: 992px) {
   .landing .image img {
@@ -134,4 +134,5 @@ body {
     width: 100%;
   }
 }
+
 /* End Landing */
