@@ -29,7 +29,7 @@
             <h1>School Time !</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, cum. Itaque at ab ad doloribus.
-                Lorem ipsum dolor sit ametd doloribus.
+                Lorem ipsum dolor sit.
             </p>
     </div>
     <div class="image">
