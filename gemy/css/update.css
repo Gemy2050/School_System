@@ -1,0 +1,60 @@
+body {
+  font-family: system-ui;
+  background-color: #DDD;
+}
+h2 {
+  color: #3AB4F2;
+  font-size: 35px;
+  padding: 0 40px;
+  width: fit-content;
+  margin: 40px auto;
+}
+form {
+  width: 400px ;
+  margin: auto;
+  text-align: center;
+}
+.input {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  caret-color: lightseagreen;
+  font-size: 18px;
+}
+.radio-inputs {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-top: 30px;
+}
+input[type="radio"] {
+  font-size: 20px;
+  color: red;
+}
+input[type='submit'] {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 50px auto;
+  font-size: 18px;
+}
+input[name="update"] {
+  background-color: #3AB4F2;
+  color: white;
+  float: left;
+}
+input[name="cancel"] {
+  background-color: white;
+  color: #3AB4F2;
+  border: 2px solid #3AB4F2;
+  float: right;
+  margin-right: -20px;
+}

@@ -1,0 +1,62 @@
+body {
+  font-family: system-ui;
+  background-color: #DDD;
+}
+h2 {
+  color: #3AB4F2;
+  font-size: 35px;
+  padding: 0 40px;
+  width: fit-content;
+  margin: 40px auto;
+}
+form {
+  width: 400px ;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.input {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  caret-color: lightseagreen;
+  font-size: 18px;
+}
+input[type='submit'], a.cancel {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 30px ;
+  font-size: 18px;
+}
+input[name="submit"] {
+  background-color: #3AB4F2;
+  border: 2px solid #3AB4F2;
+  color: white;
+  padding: 11px 60px;
+  position: absolute;
+  left: 15px;
+}
+a.cancel {
+  padding: 10px 50px;
+  background-color: white;
+  color: #3AB4F2;
+  border: 2px solid #3AB4F2;
+  text-decoration: none;
+  position: absolute;
+  right: -20px;
+}
+.error {
+  font-size: 35px;
+  color: red;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,81 @@
+body {
+  font-family: system-ui;
+  background-color: #DDD;
+}
+.empty {
+  width:fit-content;
+  margin: 50px auto; 
+  background: #009688;
+  color: white;
+  font-size: 35px;
+  border-radius: 6px;
+  padding: 15px;
+}
+table {
+  width: 80%;
+  margin: auto;
+  border-spacing: 0px;
+  font-size: 18px;
+  margin-top: 50px;
+}
+.add {
+  text-decoration: none;
+  background-color:rgb(25, 141, 243);
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 10px;
+  position: fixed;
+  left: 4px;
+  top: 10px;
+}
+
+table td{
+  padding: 15px;
+  background: #eee;
+  border: 1px solid #DDD ;
+  text-align: center;
+}
+table td::selection {
+  background-color: black;
+  color: rgb(47, 255, 0);
+}
+table thead td {
+  background-color: rgb(25, 141, 243);
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  border-color: #e2e2e2;
+}
+form {
+  display: inline-block;
+  margin: 20px;
+}
+input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="submit"] {
+  display: block;
+} 
+input[type="radio"] {
+  margin-bottom: 10px;
+}
+table a {
+  border:none;
+  border-radius:6px;
+  background: red;
+  margin:0 10px;
+  padding: 5px 8px; 
+  color: white; 
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btns{
+  display: flex; 
+  justify-content: space-evenly;
+} 
+.edt{
+  background: #009688;
+}
