@@ -3,7 +3,7 @@ body {
   background-color: #DDD;
 }
 .warning {
-  color: blue;
+  color: red;
   width: fit-content;
   margin: auto;
   font-size: 30px;
