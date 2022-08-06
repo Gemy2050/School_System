@@ -41,9 +41,6 @@ $result = mysqli_query($conn, $sql);
   right: 3px;
   top: 10px;
 }
-table {
-  margin-top: 50px;
-}
 </style>
 <body>
   <div ><a class="add" href="index.php">New Student</a></div>

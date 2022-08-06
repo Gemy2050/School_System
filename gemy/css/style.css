@@ -29,7 +29,17 @@ table {
   left: 4px;
   top: 10px;
 }
-
+.home {
+  text-decoration: none;
+  background-color:rgb(25, 141, 243);
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 10px;
+  position: fixed;
+  right: 3px;
+  top: 10px;
+}
 table td{
   padding: 15px;
   background: #eee;
