@@ -37,8 +37,6 @@
   </div>
 </div>
 
-<form action="gemy/login.php">
-    <input type="submit" value="Add Student">
-</form>
+<a href="gemy/login.php">Add Student</a>
 </body>
 </html>

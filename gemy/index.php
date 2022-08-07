@@ -61,6 +61,6 @@ if (!$conn)
       
       header("location: /school_system/gemy/test.php");
     }elseif(isset($_POST["cancel"])) {
-      header("location:  /school_system/gemy/.php");
+      header("location:  /school_system/gemy/test.php");
     }
 ?>

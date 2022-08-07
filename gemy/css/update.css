@@ -3,7 +3,7 @@ body {
   background-color: #DDD;
 }
 h2 {
-  color: #3AB4F2;
+  color: #3AB4F2; 
   font-size: 35px;
   padding: 0 40px;
   width: fit-content;
@@ -15,8 +15,7 @@ form {
   text-align: center;
 }
 .input {
-  display: block;
-  width: 100%;
+  width: 350px;
   margin-bottom: 25px;
   padding: 15px;
   border: none;
@@ -43,18 +42,15 @@ input[type='submit'] {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  margin: 50px auto;
+  margin: 50px 10px;
   font-size: 18px;
 }
 input[name="update"] {
   background-color: #3AB4F2;
   color: white;
-  float: left;
 }
 input[name="cancel"] {
   background-color: white;
   color: #3AB4F2;
   border: 2px solid #3AB4F2;
-  float: right;
-  margin-right: -20px;
 }
