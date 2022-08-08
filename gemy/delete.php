@@ -14,6 +14,6 @@ if (isset($_GET["id"])) {
     echo "Error";
   }
 }
-header("location: /gemy/test.php");
+header("location: /school_system/gemy/test.php");
 exit;
 ?>
