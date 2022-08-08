@@ -26,7 +26,7 @@ form {
   caret-color: lightseagreen;
   font-size: 18px;
 }
-input[type='submit'], a.cancel {
+input[type="submit"], a.cancel {
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -34,11 +34,10 @@ input[type='submit'], a.cancel {
   font-size: 18px;
   margin: 10px;
 }
-input[name="submit"] {
+input[type="submit"] {
   background-color: #3AB4F2;
-  border: 2px solid #3AB4F2;
   color: white;
-  padding: 10px 60px;
+  padding: 12px 60px;
 }
 a.cancel {
   padding: 10px 50px;
@@ -46,7 +45,6 @@ a.cancel {
   color: #3AB4F2;
   border: 2px solid #3AB4F2;
   text-decoration: none;
-
 }
 .error {
   font-size: 35px;
@@ -79,9 +77,12 @@ a.cancel {
 }
 .forget {
   display: block;
+  padding: 0;
+  background:transparent;
   color: #3AB4F2;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
+  width: fit-content;
   margin-top: 20px;
 }
