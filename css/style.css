@@ -89,6 +89,19 @@ body {
   color: var(--main-color);
   transition: .3s;
 }
+@media(max-width: 767px) {
+  .header .container {
+    flex-direction: column;
+  }
+  .header .logo {
+    height: 45px;
+    margin-top: 5px;
+  }
+  .nav li a {
+    padding: 15px;
+  }
+
+}
 /* End Header */
 /* Start Landing */
 .landing {
@@ -139,6 +152,10 @@ body {
   .landing .text p{
     width: 100%;
   }
+  .landing .text h1 {
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
 
 /* End Landing */
@@ -156,7 +173,7 @@ h1 {
   border-right: 2px solid var(--main-color);
   overflow: hidden;
   white-space: nowrap;
-  animation: control-width 2s steps(28) 1s both, zip 0.5s infinite;
+  animation: control-width 2s steps(28) 1s both, blanc 0.5s infinite;
 }
 @keyframes control-width {
   from {
@@ -166,11 +183,24 @@ h1 {
     width: 250px;
   }
 }
-@keyframes zip {
+@keyframes blanc {
   from {
     border-right-color: var(--main-color);
   }
   to {
     border-right-color: transparent;
   }
+}
+
+.add-btn {
+  display: block;
+  background: var(--main-color);
+  color: white;
+  width: fit-content;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px auto;
 }

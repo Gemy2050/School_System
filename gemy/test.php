@@ -30,17 +30,7 @@ $result = mysqli_query($conn, $sql);
   <title>Students Details</title>
 </head>
 <style>
-  .home {
-  text-decoration: none;
-  background-color:rgb(25, 141, 243);
-  color: white;
-  font-size: 20px;
-  border-radius: 6px;
-  padding: 10px;
-  position: fixed;
-  right: 3px;
-  top: 10px;
-}
+
 </style>
 <body>
   <div ><a class="add" href="index.php">New Student</a></div>
@@ -53,7 +43,7 @@ $result = mysqli_query($conn, $sql);
           echo "<thead>
           <tr>
             <td>ID</td>
-            <td>Name</td>
+            <td>Student Name</td>
             <td>Phone</td>
             <td>Gender</td>
             <td>Address</td>
