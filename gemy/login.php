@@ -18,7 +18,7 @@ if(isset($_POST['submit'])) {
         
           if($_POST['password'] == $row['password']) {
 
-            header('location: /school_system/gemy/test.php');
+            header('location: /school_system/gemy/main.php');
 
           }else {
               echo "<h3 class='error'> Password is Wrong, Try Again </h3>";

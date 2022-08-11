@@ -34,7 +34,7 @@ $result = mysqli_query($conn, $sql);
 </style>
 <body>
   <div ><a class="add" href="index.php">New Student</a></div>
-  <a class="home" href="../index.php">Return Home</a>
+  <a class="home" href="main.php">Return Main </a>
   <table>
         <?php 
         $sql = "select id, name, phone, gender, address from stds";

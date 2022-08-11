@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/all.min.css">
   <title>school website</title>
-  <meta name="description " content="school system">
+  <meta name="description " content="our school system">
 </head>
 <style>
   <?php include ("css/style.css"); ?>
@@ -186,6 +186,20 @@
       </div>
     </div>
     <!-- End Work Steps -->
+    <!-- Start Register -->
+    <div class="register" id="register">
+      <div class="container">
+        <div class="box">
+        <p>Students Can Register School Materials, Click Register To Start Registration</p>
+        <a href="gemy/register.php">Register</a>
+        </div>
+        <div class="box">
+        <p>Admin Can Manage Students and Teachers , Click Manage School To Start Management</p>
+        <a href="gemy/login.php">Manage</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Register -->
     <!-- Start Services -->
     <div class="services" id="services">
       <h2 class="main-title">Services</h2>

@@ -11,6 +11,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: system-ui;
 }
@@ -175,7 +178,6 @@ body {
 }
 
 /* End Landing */
-
 /* Start Features */
 .features {
   padding-top: var(--main-padding-top);
@@ -413,6 +415,85 @@ body {
   font-size: 18px;
 }
 /* End Work Steps */
+/* Start Register */
+.register {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-image: url("/school_system/imgs/school5.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .6);
+}
+.register .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media(max-width: 991px) {
+  .register .container {
+    flex-direction: column;
+  }
+}
+.register .box {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 30px;
+  flex-basis: 40%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00968777;
+}
+@media(max-width: 991px) {
+  .register .box:first-child {
+    margin-bottom: 50px;
+  }
+  .register .box:last-child {
+    margin-top: 50px;
+  }
+}
+.register .box p {
+  margin-bottom: 50px; 
+  line-height: 2;
+  font-size: 25px;
+}
+.register .box a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 6px;
+  padding: 15px 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media(max-width: 767px) {
+  .register .box p {
+    font-size: 20px;
+  }
+  .register .box a {
+    font-size: 17px;
+  }
+}
+/* End Register */
 /* Start Services */
 .services {
   padding-top: var(--main-padding-top);
@@ -623,7 +704,7 @@ body {
   }
 }
 .events .subscribe form input[type="submit"]:hover {
-  background-color: var(--main-color-alt);
+  background-color: #038fd0;
 }
 /* End Events */
 /* Start Contact Us */
@@ -682,7 +763,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-.info span {
+.contact .info span {
     display: block;
     color: #777;
     margin-bottom: 10px;
