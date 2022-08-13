@@ -27,7 +27,7 @@ if (!$conn)
     margin: auto;
     margin-top: 15px;
     margin-bottom: 25px;
-    font-size: 25px;
+    font-size: 30px;
     color: #3AB4F2;
     width: fit-content;
   }

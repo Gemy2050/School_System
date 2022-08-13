@@ -246,7 +246,7 @@
         <a href="gemy/register.php">Register</a>
       </div>
       <div class="box">
-        <p>Admin Can Manage Students and Teachers , Click Manage School To Start Management</p>
+        <p>Admin Can Manage Students and Teachers , Click Manage To Start Management</p>
         <a href="gemy/login.php">Manage</a>
       </div>
     </div>
