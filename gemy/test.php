@@ -37,7 +37,7 @@ $result = mysqli_query($conn, $sql);
   <a class="home" href="main.php">Return Main </a>
   <table>
         <?php 
-        $sql = "select id, name, phone, gender, address from stds";
+        $sql = "select id, name, phone, gender, address from stds order by name";
         $result = mysqli_query($conn, $sql);
         if (mysqli_num_rows($result) > 0) {
           echo "<thead>

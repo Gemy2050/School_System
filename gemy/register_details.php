@@ -27,15 +27,17 @@ $result = mysqli_query($conn, $sql);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="../css/all.min.css">
-  <title>Students Details</title>
+  <title>Register Details</title>
 </head>
 <style>
 
 </style>
 <body>
-  <a class="add" href="../index.php">Return Main </a>
+  <a class="home" href="../index.php">Return Home </a>
+  <a class="add" href="register.php">Return Main </a>
   <table>
         <?php 
+
         $sql = "select id, name, phone, email, subjects from courses order by name";
         $result = mysqli_query($conn, $sql);
         if (mysqli_num_rows($result) > 0) {

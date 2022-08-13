@@ -6,6 +6,7 @@ $dbname = "students";
 $conn = new mysqli($servername, $username, $password, $dbname);
 if (!$conn)
   die(mysqli_connect_error());
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -115,17 +116,48 @@ if (!$conn)
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 11;
   }
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 111%;
-  background-color: rgba(0, 0, 0, .8);
-  left: 0;
-  top: 0;
-  display: none;
-}
-.home {
+
+  .hide {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 111%;
+    background-color: rgba(0, 0, 0, .8);
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 10;
+  }
+
+  .det {
+    text-decoration: none;
+    background-color: rgb(25, 141, 243);
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 10px;
+    position: fixed;
+    left: 4px;
+    top: 10px;
+  }
+  .home {
   text-decoration: none;
   background-color:rgb(25, 141, 243);
   color: white;
@@ -133,16 +165,17 @@ if (!$conn)
   border-radius: 6px;
   padding: 10px;
   position: fixed;
-  left: 4px;
+  right: 3px;
   top: 10px;
 }
 </style>
 
 <body>
-<div class="overlay"></div>
+  <div class="overlay"></div>
   <div class="container">
     <h2>Registration Page</h2>
-    <a class="home" href="register_details.php">Register Details</a>
+    <a class="det" href="register_details.php">Register Details</a>
+    <a class="home" href="../index.php">Return Home</a>
 
     <form method="post" action="">
 
@@ -176,12 +209,19 @@ if (!$conn)
 <?php
 if (isset($_POST['submit'])) {
 
-  if(strlen($_POST['phone']) != 11 || !is_numeric($_POST['phone'])) {
-    header("REFRESH:2;URL=register.php");
+  if (strlen($_POST['phone']) != 11 || !is_numeric($_POST['phone'])) {
     echo "<p class='warning'>Please, Phone Must Be 11 Numbers</p>";
-    echo "<style>.overlay{display:block;}</style>"; 
+    echo "<a class='hide' href=''>Hide</a>";
+    echo "<style>.overlay{display:block;}</style>";
     return;
   }
+  if (empty($_POST['subjects'])) {
+    echo "<p class='warning'>Please, subjects cannot be empty</p>";
+    echo "<a class='hide' href=''>Hide</a>";
+    echo "<style>.overlay{display:block;}</style>";
+    return;
+  }
+
 
   if (count($_POST['subjects']) == 5) {
 
@@ -201,44 +241,24 @@ if (isset($_POST['submit'])) {
       try {
         if (!mysqli_query($conn, $sql))
           throw new Exception();
-          header("REFRESH:2;URL=register_details.php");
         echo "<p class='warning'>Done Successfully</p>";
+        
       } catch (Exception $e) {
-        header("REFRESH:2;URL=register_details.php");
         echo "<p class='warning'>You have Enrolled Once</p>";
       }
+      echo "<a class='hide' href='register_details.php'>Ok</a>";
       echo "<style>.overlay{display:block;}</style>";
-    } else  {
-      header("REFRESH:2;URL=register.php");
-      echo"<p class='warning'>Unknown ID </p>";
+    } else {
+      echo "<p class='warning'>Unknown ID </p>";
+      echo "<a class='hide' href=''>Hide</a>";
       echo "<style>.overlay{display:block;}</style>";
-    } 
+    }
   } else {
-    header("REFRESH:2;URL=register.php");
-    echo "<p class='warning'>Subjects Must Be 5</p>";
     echo "<style>.overlay{display:block;}</style>";
+    echo "<p class='warning'>Subjects Must Be 5</p>";
+    echo "<a class='hide' href=''>Hide</a>";
   }
 }
 ?>
 
-<?php
 
-// $names = ['Mohamed', 'Ali', 'Zain'];
-
-// $x = implode(', ', $names);
-// echo $x . '<br>';
-
-
-// $a = explode(', ', $x);
-// foreach($a as $b)
-//   echo "<br>" .$b . "<br>";
-
-
-
-
-
-
-// foreach ($_POST['subjects'] as $value) {
-//   echo "Chosen Subjects : " . $value . '<br/>';
-// }
-?>

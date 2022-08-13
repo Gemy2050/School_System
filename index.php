@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
   <meta charset="UTF-8">
@@ -22,7 +22,6 @@
       <div class="logo"><img src="imgs/logo1.jpg" alt=""></div>
       <ul class="nav">
         <li><a href="" style="color: var(--main-color);">Home</a></li>
-        <!-- <li><a href="#features">Features</a></li> -->
         <li><a href="#register">Register</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#events">Events</a></li>

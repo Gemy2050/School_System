@@ -59,6 +59,10 @@ if (mysqli_num_rows($result) > 0) {
 
     $sql = "update stds set name='$_POST[name]', phone='$_POST[phone]', address='$_POST[address]', gender='$_POST[gender]' WHERE id=$_GET[id]";
 
+    $sql2 = "update courses set name='$_POST[name]' WHERE id=$_GET[id]";
+
+    mysqli_query($conn, $sql2);
+
     if (mysqli_query($conn, $sql)) {
       echo "Record updated successfully";
     } else {

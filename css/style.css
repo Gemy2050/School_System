@@ -103,7 +103,6 @@ body {
   font-size: 18px;
   transition: .3s;
 }
-
 .nav li a::before {
   content: '';
   position: absolute;
@@ -114,7 +113,6 @@ body {
   height: 4px;
   transition: .5s;
 }
-
 .nav li:hover a::before {
   left: 0;
   transition: .3s;
@@ -1192,17 +1190,4 @@ body {
   to {
     border-right-color: transparent;
   }
-}
-
-.add-btn {
-  display: block;
-  background: var(--main-color);
-  color: white;
-  width: fit-content;
-  padding: 15px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 30px auto;
 }

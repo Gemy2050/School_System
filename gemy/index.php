@@ -55,6 +55,7 @@ if (!$conn)
       $name = $_POST["name"];
       $address = $_POST["address"];
       $gender = $_POST["gender"];
+      $phone = $_POST["phone"];
       $sql = "insert into stds(name, phone, gender, address) values('$name','$phone','$gender', '$address')";
       if(!mysqli_query($conn, $sql)) 
         echo "Failed";
