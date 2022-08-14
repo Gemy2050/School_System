@@ -60,6 +60,7 @@ if (isset($_POST["submit"])) {
     $name = $_POST["name"];
     $address = $_POST["address"];
     $gender = $_POST["gender"];
+    $phone = $_POST["phone"];
     $sql = "insert into teachers(name, phone, gender, address) values('$name','$phone','$gender', '$address')";
     if (!mysqli_query($conn, $sql))
         echo "Failed";

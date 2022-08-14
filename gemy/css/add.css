@@ -50,7 +50,7 @@ input[type='submit'], a.cancel {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  margin: 50px auto;
+  margin: 50px auto; 
   font-size: 18px;
   margin: 10px;
 }
