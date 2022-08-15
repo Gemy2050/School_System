@@ -76,14 +76,16 @@ if (!$conn)
   }
 
   .subjects-content {
-    padding: 15px;
-    padding-right: 30px;
+    /* padding-top: 15px; */
+    /* padding-right: 30px; */
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
   }
 
   h3 {
     color: #777;
+    font-size: 18px;
   }
 
   .subjects-content .subjects {
@@ -96,6 +98,7 @@ if (!$conn)
     user-select: none;
     color: #3AB4F2;
     font-weight: bold;
+    display: flex;
   }
 
   input[type='checkbox'] {
@@ -188,12 +191,18 @@ if (!$conn)
         <div class="subjects">
           <div class="sub"><input type="checkbox" name='subjects[]' value="Calculus" id="calculus"> <label for="calculus">calculus</label></div>
           <div class="sub"><input type="checkbox" name='subjects[]' value="Physics" id="physics"> <label for="physics">physics</label></div>
-          <div class="sub"><input type="checkbox" name='subjects[]' value="English" id="english"> <label for="english">english</label></div>
+          <div class="sub"><input type="checkbox" name='subjects[]' value="Biology" id="biology"> <label for="biology">biology</label></div>
           <div class="sub"><input type="checkbox" name='subjects[]' value="Algebra" id="algebra"> <label for="algebra">algebra</label> </div>
-          <div class="sub"><input type="checkbox" name='subjects[]' value="Algoritms" id="algorithms"><label for="algorithms">algorithms</label></div>
-          <div class="sub"><input type="checkbox" name='subjects[]' value="Electronics" id="electronics"> <label for="electronics">electronics</label></div>
-          <div class="sub"><input type="checkbox" name='subjects[]' value="IS" id="is"> <label for="is">IS</label></div>
-          <div class="sub"><input type="checkbox" name='subjects[]' value="CS" id="cs"> <label for="cs">CS</label></div>
+          <div class="sub"><input type="checkbox" name='subjects[]' value="Math" id="math"><label for="math">math</label></div>
+          <div class="sub"><input type="checkbox" name='subjects[]' value="Chemistry" id="chemistry"> <label for="chemistry">chemistry</label></div>
+        </div>
+        <div class="subjects">
+        <div class="sub"><input type="checkbox" name='subjects[]' value="Arabic" id="arabic"> <label for="arabic">arabic</label></div>
+          <div class="sub"><input type="checkbox" name='subjects[]' value="Francais" id="francais"> <label for="francais">francais</label></div>
+          <div class="sub"><input type="checkbox" name='subjects[]' value="Deutch" id="deutch"> <label for="deutch">deutch</label></div>
+          <div class="sub"><input type="checkbox" name='subjects[]' value="English" id="english"> <label for="english">english</label></div>
+          <div class="sub"><input type="checkbox" name='subjects[]' value="Spanish" id="spanish"> <label for="spanish">spanish</label> </div>
+          <div class="sub"><input type="checkbox" name='subjects[]' value="Italiano" id="italiano"><label for="italiano">italiano</label></div>
         </div>
       </div>
 
