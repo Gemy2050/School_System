@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -36,8 +36,7 @@
       <div class="text">
         <h1>School Time </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, cum. Itaque at ab ad doloribus.
-          Lorem ipsum dolor sit.
+          The world has changed, schooling options have changed with it, no longer limited by geography with our online School System
         </p>
       </div>
       <div class="image">
@@ -101,19 +100,21 @@
       <div class="box quality">
         <div class="img-holder"><img src="imgs/features-01.jpg" alt=""></div>
         <h2>Quality</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+        <p>Quality as reputation refers to a general consensus, rarely quantified, of high and low quality, most
+          commonly used in reference are “known” for their
+          quality, or sometimes their lack thereof.</p>
         <a href="#">More</a>
       </div>
       <div class="box time">
         <div class="img-holder"><img src="imgs/features-02.jpg" alt=""></div>
         <h2>Time</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+        <p>School Life is the best time of our life as we make new friends, learn new things and build our career there. School time is the only time which we enjoy, and when we enter college, we always miss our school life.</p>
         <a href="#">More</a>
       </div>
       <div class="box passion">
         <div class="img-holder"><img src="imgs/features-03.jpg" alt=""></div>
         <h2>Passion</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+        <p>There is this famous saying, ''Develop a passion for learning. If you do, you will never cease to grow". I could not agree more. Growing up as a kid, I vividly recall myself always being enthusiastic to learn and explore.</p>
         <a href="#">More</a>
       </div>
     </div>
@@ -126,7 +127,7 @@
       <div class="box">
         <div class="content">
           <h3>Test Title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <p>Discuss and share ideas with other users through our messaging system With these features</p>
         </div>
         <div class="info">
           <a href="">Read More</a>
@@ -135,7 +136,7 @@
       <div class="box">
         <div class="content">
           <h3>Test Title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <p>Desktop version for Windows, MacOS, and Linux Download and install our school management software</p>
         </div>
         <div class="info">
           <a href="">Read More</a>
@@ -144,7 +145,7 @@
       <div class="box">
         <div class="content">
           <h3>Test Title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <p> Our free school management software comes in all languages. Manage your institute with your language.</p>
         </div>
         <div class="info">
           <a href="">Read More</a>
@@ -153,7 +154,7 @@
       <div class="box">
         <div class="content">
           <h3>Test Title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <p>Our school has a complete solution for exams management and provide reports and result cards. </p>
         </div>
         <div class="info">
           <a href="">Read More</a>
@@ -209,8 +210,8 @@
           <div class="text">
             <h3>Analysis</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
-              recusandae debitis vel
+              Analysis system is important for students to analyze the result and keep track of students. We are able to see the
+              individual candidate's results separately and more easily.
             </p>
           </div>
         </div>
@@ -219,8 +220,8 @@
           <div class="text">
             <h3>Architecture</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
-              recusandae debitis vel
+              Our system easy-to-use, comprehensive, and secure supplemental digital learning program empowers administrators
+              and teachers to help students build essential skills .
             </p>
           </div>
         </div>
@@ -229,8 +230,7 @@
           <div class="text">
             <h3>Developement</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
-              recusandae debitis vel
+              School management software development and implementation help run schools and institutes and connect all the parties involved in a well-organized digital system.
             </p>
           </div>
         </div>
@@ -327,8 +327,8 @@
         </div>
         <h2 class="title">Tech Masters Event 2022</h2>
         <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci quam
-          ratione aliquam excepturi nulla in harum, veritatis porro
+          Here you will find projects from all over the world. They will inspire you in your further work and in search of your own solutions. Develop your technical talent within new technologies.
+          The world awaits your projects!
         </p>
       </div>
       <div class="subscribe">
