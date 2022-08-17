@@ -33,21 +33,32 @@ if (mysqli_num_rows($result) > 0) {
 </head>
 <style>
 <?php include("../gemy/css/update.css"); ?>
+
+.warning {
+color: red;
+width: fit-content;
+margin: auto;
+font-size: 30px;
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+}
 </style>
 
 <body>
     <h2>Update Teacher</h2>
     <form action="" method="POST">
-        <input class="input" type="text" name="name" placeholder="Name" value="<?php echo $name ?>">
-        <input class="input" type="text" name="phone" placeholder="Phone" value="<?php echo $phone ?>">
-        <input class="input" type="text" name="address" placeholder="Address" value="<?php echo $address ?>">
+        <input class="input" type="text" name="name" placeholder="Name" value="<?php echo (isset($_POST['name']) ? $_POST['name'] : $name) ?>">
+        <input class="input" type="text" name="phone" placeholder="Phone" value="<?php echo (isset($_POST['phone']) ? $_POST['phone'] : $phone) ?>">
+        <input class="input" type="text" name="address" placeholder="Address" value="<?php echo (isset($_POST['address']) ? $_POST['address'] : $address) ?>">
         <div class="radio-inputs">
             <div class="box">
-                <input type="radio" name="gender" placeholder="Gender" value="Male" id="male" <?php echo ($gender == 'Male' ? 'checked' : '') ?>>
+                <input type="radio" name="gender" placeholder="Gender" value="Male" id="male" <?php echo ($gender == 'Male' ? 'checked' : '') ?> <?php echo (isset($_POST['gender']) && $_POST['gender']=='Male' ? 'checked' : '') ?>>
                 <label for="male">Male</label>
             </div>
             <div class="box">
-                <input type="radio" name="gender" placeholder="Gender" value="Female" id="female" <?php if ($gender == "Female") echo "checked" ?>>
+                <input type="radio" name="gender" placeholder="Gender" value="Female" id="female" <?php  echo ($gender == 'Female' ? 'checked' : '')?> <?php echo (isset($_POST['gender']) && $_POST['gender']=='Female' ? 'checked' : '') ?>>
                 <label for="female">Female</label>
             </div>
         </div>
@@ -58,6 +69,11 @@ if (mysqli_num_rows($result) > 0) {
     </form>
     <?php
     if (isset($_POST['update'])) {
+
+        if(strlen($_POST['phone']) != 11 || !is_numeric($_POST['phone'])) {
+            echo "<h3 class='warning'>Please, Phone Must Be 11 Numbers</h3>";
+            return;
+        }
 
         $sql = "update teachers set name='$_POST[name]', phone='$_POST[phone]', address='$_POST[address]', gender='$_POST[gender]' WHERE id=$_GET[id]";
 

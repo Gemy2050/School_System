@@ -18,18 +18,18 @@ if (!isset($_SERVER["HTTP_REFERER"])) {
     <?php include("../gemy/css/add.css"); ?>
 </style>
 <body>
-    <h2>Add New Student</h2>
+    <h2>Add New Teacher</h2>
     <form action="index.php" method="POST">
-        <input class="input" type="text" name="name" placeholder="Name" required>
-        <input class="input" type="text" name="phone" placeholder="Phone" required>
-        <input class="input" type="text" name="address" placeholder="Address" required>
+        <input class="input" type="text" name="name" placeholder="Name" required value="<?php echo (isset($_POST['name']) ? $_POST['name'] : '') ?>">
+        <input class="input" type="text" name="phone" placeholder="Phone" required value="<?php echo (isset($_POST['phone']) ? $_POST['phone'] : '') ?>">
+        <input class="input" type="text" name="address" placeholder="Address" required value="<?php echo (isset($_POST['address']) ? $_POST['address'] : '') ?>">
         <div class="radio-inputs">
             <div class="box">
-                <input type="radio" name="gender" placeholder="Gender" value="Male" id="male" checked>
+                <input type="radio" name="gender" placeholder="Gender" value="Male" id="male" checked <?php echo (isset($_POST['gender']) && $_POST['gender']=='Male' ? 'checked' : '') ?>>
                 <label for="male">Male</label>
             </div>
             <div class="box">
-                <input type="radio" name="gender" placeholder="Gender" value="Female" id="female">
+                <input type="radio" name="gender" placeholder="Gender" value="Female" id="female" <?php echo (isset($_POST['gender']) && $_POST['gender']=='Female' ? 'checked' : '') ?>>
                 <label for="female">Female</label>
             </div>
         </div>

@@ -76,8 +76,6 @@ if (!$conn)
   }
 
   .subjects-content {
-    /* padding-top: 15px; */
-    /* padding-right: 30px; */
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -160,17 +158,18 @@ if (!$conn)
     left: 4px;
     top: 10px;
   }
+
   .home {
-  text-decoration: none;
-  background-color:rgb(25, 141, 243);
-  color: white;
-  font-size: 20px;
-  border-radius: 6px;
-  padding: 10px;
-  position: fixed;
-  right: 3px;
-  top: 10px;
-}
+    text-decoration: none;
+    background-color: rgb(25, 141, 243);
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 10px;
+    position: fixed;
+    right: 3px;
+    top: 10px;
+  }
 </style>
 
 <body>
@@ -197,7 +196,7 @@ if (!$conn)
           <div class="sub"><input type="checkbox" name='subjects[]' value="Chemistry" id="chemistry"> <label for="chemistry">chemistry</label></div>
         </div>
         <div class="subjects">
-        <div class="sub"><input type="checkbox" name='subjects[]' value="Arabic" id="arabic"> <label for="arabic">arabic</label></div>
+          <div class="sub"><input type="checkbox" name='subjects[]' value="Arabic" id="arabic"> <label for="arabic">arabic</label></div>
           <div class="sub"><input type="checkbox" name='subjects[]' value="Francais" id="francais"> <label for="francais">francais</label></div>
           <div class="sub"><input type="checkbox" name='subjects[]' value="Deutch" id="deutch"> <label for="deutch">deutch</label></div>
           <div class="sub"><input type="checkbox" name='subjects[]' value="English" id="english"> <label for="english">english</label></div>
@@ -251,7 +250,6 @@ if (isset($_POST['submit'])) {
         if (!mysqli_query($conn, $sql))
           throw new Exception();
         echo "<p class='warning'>Done Successfully</p>";
-        
       } catch (Exception $e) {
         echo "<p class='warning'>You have Enrolled Once</p>";
       }
@@ -269,5 +267,3 @@ if (isset($_POST['submit'])) {
   }
 }
 ?>
-
-
