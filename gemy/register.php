@@ -48,6 +48,7 @@ if (!$conn)
     background-color: #f9f9f9;
     caret-color: lightseagreen;
     font-size: 18px;
+    border-radius: 6px;
   }
 
   input[type='submit'],
@@ -181,9 +182,9 @@ if (!$conn)
 
     <form method="post" action="">
 
-      <input class="input" type="number" name="id" placeholder="ID" required>
-      <input class="input" type="text" name="phone" placeholder="Phone" required>
-      <input class="input" type="email" name="email" placeholder="Email" required>
+      <input class="input" type="number" name="id" placeholder="ID" required value="<?php echo (isset($_POST['id']) ? $_POST['id'] : '') ?>">
+      <input class="input" type="text" name="phone" placeholder="Phone" required value="<?php echo (isset($_POST['phone']) ? $_POST['phone'] : '') ?>">
+      <input class="input" type="email" name="email" placeholder="Email" required value="<?php echo (isset($_POST['email']) ? $_POST['email'] : '') ?>">
 
       <div class="subjects-content">
         <h3>Select 5 Courses</h3>

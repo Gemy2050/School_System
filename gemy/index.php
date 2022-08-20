@@ -1,6 +1,6 @@
 <?php
   if(!isset($_SERVER["HTTP_REFERER"])) {
-    header("location: /school_system/gemy/check.php");
+    header("location: /school_system/gemy/check.php"); 
     exit;
   }
 ?>
@@ -56,6 +56,7 @@ if (!$conn)
       $address = $_POST["address"];
       $gender = $_POST["gender"];
       $phone = $_POST["phone"];
+      
       $sql = "insert into stds(name, phone, gender, address) values('$name','$phone','$gender', '$address')";
       if(!mysqli_query($conn, $sql)) 
         echo "Failed";

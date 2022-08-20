@@ -1,5 +1,5 @@
 <?php 
-if(!isset($_SERVER["HTTP_REFERER"])) {
+if(!isset($_SERVER["HTTP_REFERER"])) { 
   header("location: /school_system/gemy/check.php");
 }
   $servername = "localhost";

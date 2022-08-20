@@ -68,6 +68,7 @@ form {
   background-color: #f9f9f9;
   caret-color: lightseagreen;
   font-size: 18px;
+  border-radius: 6px;
 }
 input[type='submit'] {
   border: none;

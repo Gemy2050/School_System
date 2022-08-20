@@ -242,7 +242,7 @@
   <div class="register" id="register">
     <div class="container">
       <div class="box">
-        <p>Students Can Register School Materials, Click Register To Start Registration</p>
+        <p>Students Can Register School Courses, Click Register To Start Registration</p>
         <a href="gemy/register.php">Register</a>
       </div>
       <div class="box">

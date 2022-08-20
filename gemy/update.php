@@ -9,7 +9,7 @@ if(!$conn) {
   die("Connection Error");
 }
 
-$sql = "select id, name, phone, address, gender from stds where id=$_GET[id]";
+$sql = "select id, name, phone, address, gender from stds where id=$_GET[id]"; 
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
   while ($row = mysqli_fetch_assoc($result)) {

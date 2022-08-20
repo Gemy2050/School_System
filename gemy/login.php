@@ -57,7 +57,7 @@ if (mysqli_num_rows($result) == 0) {
 
 
   <h2 class="head">Login</h2>
-  <form method="POST">
+  <form method="POST"> 
     <input type="text" name="username" placeholder="Username" class="input" autofocus value="<?php echo (isset($_POST['username']) ? $_POST['username'] : '') ?>">
     <input type="password" name="password" placeholder="Password" class="input">
     <input type="submit" value="Login" name="submit">

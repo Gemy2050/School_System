@@ -43,7 +43,7 @@ $result = mysqli_query($conn, $sql);
           echo "<thead>
           <tr>
             <td>ID</td>
-            <td>Student Name</td>
+            <td>Student Name</td> 
             <td>Phone</td>
             <td>Gender</td>
             <td>Address</td>
